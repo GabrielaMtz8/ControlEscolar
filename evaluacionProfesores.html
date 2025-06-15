@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Evaluación</title>
+</head>
+<body>
+  <h2>Evaluación de Profesores</h2>
+  <form id="formEvaluacion">
+    <label>Matrícula:</label><br>
+    <input type="text" id="matricula"><br><br>
+
+    <label>Profesor:</label><br>
+    <input type="text" id="profesor"><br><br>
+
+    <label>Calificación (1-10):</label><br>
+    <input type="number" id="calificacion" min="1" max="10"><br><br>
+
+    <label>Comentarios:</label><br>
+    <textarea id="comentarios"></textarea><br><br>
+
+    <button type="submit">Enviar Evaluación</button>
+  </form>
+
+  <script src="evaluacionProfesores.js"></script>
+</body>
+</html>
