@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Inscripción de Alumnos</title>
+</head>
+<body>
+  <h2>Inscripción de Alumnos</h2>
+  <form id="formInscripcion">
+    <label>Nombre del Alumno:</label><br>
+    <input type="text" id="nombre"><br><br>
+
+    <label>Carrera:</label><br>
+    <input type="text" id="carrera"><br><br>
+
+    <label>Semestre:</label><br>
+    <input type="number" id="semestre"><br><br>
+
+    <button type="submit">Inscribir</button>
+  </form>
+
+  <script>
+    document.getElementById("formInscripcion").addEventListener("submit", function(e) {
+      e.preventDefault();
+      alert("Alumno inscrito correctamente.");
+    });
+  </script>
+</body>
+</html>
