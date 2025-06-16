@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Postgrados</title>
+      <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+<body>
+  <h2>CRUD Postgrados</h2>
+  <form id="postgradoForm">
+    <input type="text" id="nombrePostgrado" placeholder="Nombre del Postgrado">
+    <input type="text" id="nivel" placeholder="Nivel (Especialidad, Maestría, Doctorado)">
+    <button type="button" onclick="agregarPostgrado()">Agregar</button>
+  </form>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Nivel</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaPostgrados"></tbody>
+  </table>
+
+  <script src="assets/js/crudstyle.js"></script>
+</body>
+</html>

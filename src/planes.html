@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Planes de Estudio</title>
+      <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+<body>
+  <h2>CRUD Planes de Estudio</h2>
+  <form id="planForm">
+    <input type="text" id="nombrePlan" placeholder="Nombre del Plan">
+    <input type="text" id="descripcion" placeholder="Descripción">
+    <button type="button" onclick="agregarPlan()">Agregar</button>
+  </form>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Descripción</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaPlanes"></tbody>
+  </table>
+
+  <script src="assets/js/crudstyle.js"></script>
+</body>
+</html>

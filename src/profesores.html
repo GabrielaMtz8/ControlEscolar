@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Profesores</title>
+      <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+<body>
+  <h2>CRUD Profesores</h2>
+  <form id="profesorForm">
+    <input type="text" id="nombreProfesor" placeholder="Nombre del Profesor">
+    <input type="text" id="materia" placeholder="Materia">
+    <button type="button" onclick="agregarProfesor()">Agregar</button>
+  </form>
+  
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Materia</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaProfesores"></tbody>
+  </table>
+
+  <script src="assets/js/crudstyle.js"></script>
+</body>
+</html>

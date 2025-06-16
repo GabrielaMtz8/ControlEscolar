@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Evaluación de Profesores</title>
+      <link rel="stylesheet" href="assets/css/estilos.css">
+
+</head>
+<body>
+  <h2>Evaluación de Profesores</h2>
+  <form id="evaluacionForm">
+    <input type="text" id="nombreProfesorEval" placeholder="Nombre del Profesor">
+    <input type="number" id="calificacion" placeholder="Calificación (1-10)">
+    <button type="button" onclick="agregarEvaluacion()">Agregar Evaluación</button>
+  </form>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Profesor</th>
+        <th>Calificación</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaEvaluaciones"></tbody>
+  </table>
+
+  <script src="assets/js/crudstyle.js"></script>
+</body>
+</html>

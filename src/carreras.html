@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>CRUD Carreras</title>
+      <link rel="stylesheet" href="assets/css/estilos.css">
+</head>
+<body>
+  <h2>CRUD Carreras</h2>
+  <form id="carreraForm">
+    <input type="text" id="nombreCarrera" placeholder="Nombre de la Carrera">
+    <input type="text" id="duracion" placeholder="Duración (años)">
+    <button type="button" onclick="agregarCarrera()">Agregar</button>
+  </form>
+
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Duración</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody id="tablaCarreras"></tbody>
+  </table>
+
+  <script src="assets/js/crudstyle.js"></script>
+</body>
+</html>
