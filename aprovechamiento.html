@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte de Aprovechamiento Académico</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><h1>Reporte de Aprovechamiento Académico</h1></header>
+
+  <form id="formAprovechamiento" onsubmit="event.preventDefault(); agregarFila('formAprovechamiento','tablaAprovechamiento',['grupo','carrera','nivel','promedio']);">
+    <label for="grupo">Grupo:</label>
+    <input type="text" id="grupo" name="grupo" />
+
+    <label for="carrera">Carrera:</label>
+    <input type="text" id="carrera" name="carrera" />
+
+    <label for="nivel">Nivel Académico:</label>
+    <select id="nivel" name="nivel">
+      <option value="">Seleccione</option>
+      <option value="Licenciatura">Licenciatura</option>
+      <option value="Maestría">Maestría</option>
+    </select>
+
+    <label for="promedio">Promedio:</label>
+    <input type="number" id="promedio" name="promedio" min="0" max="10" step="0.01" />
+
+    <button type="submit">Agregar Aprovechamiento</button>
+  </form>
+
+  <table id="tablaAprovechamiento">
+    <thead>
+      <tr>
+        <th>Grupo</th>
+        <th>Carrera</th>
+        <th>Nivel Académico</th>
+        <th>Promedio</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+<nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte de Bajas y Deserciones</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><h1>Reporte de Bajas y Deserciones</h1></header>
+
+  <form id="formBajas" onsubmit="event.preventDefault(); agregarFila('formBajas','tablaBajas',['matricula','nombre','fecha','motivo']);">
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" name="matricula" />
+
+    <label for="nombre">Nombre del Alumno:</label>
+    <input type="text" id="nombre" name="nombre" />
+
+    <label for="fecha">Fecha de Baja:</label>
+    <input type="date" id="fecha" name="fecha" />
+
+    <label for="motivo">Motivo:</label>
+    <input type="text" id="motivo" name="motivo" />
+
+    <button type="submit">Agregar Baja</button>
+  </form>
+
+  <table id="tablaBajas">
+    <thead>
+      <tr>
+        <th>Matrícula</th>
+        <th>Nombre</th>
+        <th>Fecha</th>
+        <th>Motivo</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+<nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+</body>
+</html>

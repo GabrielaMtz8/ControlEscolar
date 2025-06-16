@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte de Matrícula</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><h1>Reporte de Matrícula</h1></header>
+
+  <form id="formMatricula" onsubmit="event.preventDefault(); agregarFila('formMatricula','tablaMatricula',['matricula','nombre','carrera','nivel']);">
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" name="matricula" readonly value="" />
+    <button type="button" onclick="document.getElementById('matricula').value = generarMatricula();">Generar Matrícula</button>
+
+    <label for="nombre">Nombre del Alumno:</label>
+    <input type="text" id="nombre" name="nombre" />
+
+    <label for="carrera">Carrera:</label>
+    <input type="text" id="carrera" name="carrera" />
+
+    <label for="nivel">Nivel:</label>
+    <select id="nivel" name="nivel">
+      <option value="">Seleccione</option>
+      <option value="Licenciatura">Licenciatura</option>
+      <option value="Maestría">Maestría</option>
+    </select>
+
+    <button type="submit">Agregar</button>
+  </form>
+
+  <table id="tablaMatricula">
+    <thead>
+      <tr>
+        <th>Matrícula</th>
+        <th>Nombre</th>
+        <th>Carrera</th>
+        <th>Nivel</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+<nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+</body>
+</html>

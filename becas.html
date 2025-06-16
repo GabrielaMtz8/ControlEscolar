@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reporte de Becas</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header><h1>Reporte de Becas</h1></header>
+
+  <form id="formBecas" onsubmit="event.preventDefault(); agregarFila('formBecas','tablaBecas',['matricula','nombre','tipoBeca','porcentaje']);">
+    <label for="matricula">Matrícula:</label>
+    <input type="text" id="matricula" name="matricula" />
+
+    <label for="nombre">Nombre del Alumno:</label>
+    <input type="text" id="nombre" name="nombre" />
+
+    <label for="tipoBeca">Tipo de Beca:</label>
+    <input type="text" id="tipoBeca" name="tipoBeca" />
+
+    <label for="porcentaje">Porcentaje de Beca (%):</label>
+    <input type="number" id="porcentaje" name="porcentaje" min="0" max="100" />
+
+    <button type="submit">Agregar Beca</button>
+  </form>
+
+  <table id="tablaBecas">
+    <thead>
+      <tr>
+        <th>Matrícula</th>
+        <th>Nombre</th>
+        <th>Tipo de Beca</th>
+        <th>Porcentaje</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+<nav>
+    <ul class="menu">
+      <li><a href="index.html">Inicio</a></li>
+    </ul>
+</body>
+</html>
